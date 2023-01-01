@@ -379,7 +379,7 @@ if __name__ == '__main__':
 
     else:
         
-        compare = 'warm'
+        compare = 'cold'
         project = 'caicos'
         directory = f'{Path(__file__).parent}/../regdump_runs/{project}'
         inputdir = f'{directory}/project_inputs'
