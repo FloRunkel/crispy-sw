@@ -1,3 +1,17 @@
+'''
+ This code is used to compare two register dump files and generate Excel files with different sheets. 
+ Each sheet contains the differences of the two files linked to the APB register hierarchy. 
+ 
+ [10] The main function is executed with a command line call with arguments like reference filename, compare filename and output excel file. 
+ [8] The script first reads the two files and creates two databases. 
+ [10] The databases are then compared using the CompareRegister class. 
+ [6] It checks for the register name, field name and field type from the reference list and compares them with the check list. 
+ [7] If the field type is not in the non-used types list, the field is added to the dictionary. 
+ [1] The results are then written to an Excel file with different sheets for each register type. 
+ [10] The noregslist and nofieldslist are also written to the Excel file. [10]
+
+'''
+
 from abc import abstractmethod 
 import sys
 import argparse 
